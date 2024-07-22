@@ -19,9 +19,10 @@ exclude = ["duckdb-sources"]
 default = ["vcpkg", "pkg-config"]
 bundled = ["cc"]
 buildtime_bindgen = ["bindgen", "pkg-config", "vcpkg"]
+icu = ["bundled"]
 json = ["bundled"]
 parquet = ["bundled"]
-extensions-full = ["json", "parquet"]
+extensions-full = ["icu", "json", "parquet"]
 
 [dependencies]
 
