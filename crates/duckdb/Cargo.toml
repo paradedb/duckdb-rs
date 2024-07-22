@@ -20,7 +20,7 @@ name = "duckdb"
 [features]
 default = []
 bundled = ["libduckdb-sys/bundled"]
-json = ["libduckdb-sys/icu", "bundled"]
+icu = ["libduckdb-sys/icu", "bundled"]
 json = ["libduckdb-sys/json", "bundled"]
 parquet = ["libduckdb-sys/parquet", "bundled"]
 vtab = []
