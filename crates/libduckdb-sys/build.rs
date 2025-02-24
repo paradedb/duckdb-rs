@@ -125,6 +125,8 @@ mod build_bundled {
 
         let mut cfg = cc::Build::new();
 
+        add_extension(&mut cfg, &manifest, "core_functions", &mut cpp_files, &mut include_dirs);
+
         #[cfg(feature = "parquet")]
         add_extension(&mut cfg, &manifest, "parquet", &mut cpp_files, &mut include_dirs);
 
@@ -467,6 +469,7 @@ mod bindings {
             .header(header.clone())
             .allowlist_item(r#"(\w*duckdb\w*)"#)
             .allowlist_type("idx_t")
+            .layout_tests(false) // causes problems on WASM builds
             .clang_arg("-DDUCKDB_EXTENSION_API_VERSION_UNSTABLE")
             .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
             .generate()
