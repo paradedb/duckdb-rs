@@ -1,5 +1,13 @@
 # duckdb-rs
 
+> **Notice**
+>
+> This fork of `duckdb/duckdb-rs` has been discontinued and is archived.
+>
+> The code in this repository is no longer maintained.
+>
+> [Learn more](https://github.com/paradedb/pg_analytics/blob/dev/README.md).
+
 [![Downloads](https://img.shields.io/crates/d/duckdb)](https://img.shields.io/crates/d/duckdb)
 [![Build Status](https://github.com/wangfenjin/duckdb-rs/workflows/CI/badge.svg)](https://github.com/wangfenjin/duckdb-rs/actions)
 [![dependency status](https://deps.rs/repo/github/wangfenjin/duckdb-rs/status.svg)](https://deps.rs/repo/github/wangfenjin/duckdb-rs)
